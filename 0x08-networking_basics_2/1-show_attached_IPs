@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Script Displays all acive IPv4 addresses on the machine.
+
+ip a | grep "scope" | grep -Po '(?<=inet )[\d.]+'
